@@ -11,7 +11,7 @@ export const Datenschutz: VFC = () => (
       title="Alexohneander - Datenschutz"
       description="Then with a short description here."
     />
-    <Link href="/">
+    <Link href="/" passHref>
       <Image
         src={logo}
         alt="Alexohneander - Alex Wellnitz - Logo"
