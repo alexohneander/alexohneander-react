@@ -10,7 +10,7 @@ const App: CustomAppPage = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>nexst</title>
+        <title>Alexohneander - </title>
       </Head>
       {getLayout(<Component {...pageProps} />)}
     </>

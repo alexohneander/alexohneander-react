@@ -7,7 +7,6 @@ module.exports = {
     "simple-import-sort",
     "sort-destructure-keys",
     "tailwindcss",
-    "import-access",
     "testing-library",
   ],
   extends: [
@@ -17,6 +16,7 @@ module.exports = {
     "prettier",
   ],
   rules: {
+    "no-unused-vars": "off",
     curly: "error",
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
     "no-restricted-syntax": [
@@ -50,7 +50,6 @@ module.exports = {
     // sort
     "import/newline-after-import": "error",
     "import/no-default-export": "error",
-    "import-access/jsdoc": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "sort-destructure-keys/sort-destructure-keys": 2,
@@ -61,10 +60,6 @@ module.exports = {
     "@typescript-eslint/consistent-type-imports": [
       "warn",
       { prefer: "type-imports" },
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
     ],
     "@typescript-eslint/naming-convention": [
       "error",

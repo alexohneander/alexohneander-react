@@ -7,7 +7,13 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   swcMinify: true,
-  // experimental: { concurrentFeatures: true, serverComponents: true },
+  images: {
+    formats: ["image/webp"],
+    minimumCacheTTL: 60,
+  },
+  experimental: {
+    outputStandalone: true,
+  },
 };
 
 export default nextConfig;
